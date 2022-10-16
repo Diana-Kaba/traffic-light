@@ -1,25 +1,22 @@
 "use strict";
 function trafficLight(name) {
   let color = "green";
-  name = "stop";
   let examination = function () {
     if (color == "red") {
       color = "green";
-      name = "go";
     } else if (color == "green") {
       color = "yellow";
-      name = "ready";
     } else {
       color = "red";
     }
-    return color + ": " + name;
+    return name + ":" + color;
   };
   return examination;
 }
 
-let red = trafficLight();
-console.log(red("stop"));
-let green = trafficLight();
-console.log(green("go"));
-let yellow = trafficLight();
-console.log(yellow("ready"));
+let trafficLight1 = trafficLight(1);
+console.log(trafficLight1());
+let trafficLight2 = trafficLight(2);
+console.log(trafficLight2());
+let trafficLight3 = trafficLight(3);
+console.log(trafficLight3());
