@@ -18,8 +18,8 @@ function trafficLight(name) {
 }
 
 let red = trafficLight();
-console.log(red());
+console.log(red("stop"));
 let green = trafficLight();
-console.log(green());
+console.log(green("go"));
 let yellow = trafficLight();
-console.log(yellow());
+console.log(yellow("ready"));
