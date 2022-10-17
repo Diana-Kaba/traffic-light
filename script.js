@@ -20,3 +20,4 @@ let trafficLight2 = trafficLight(2);
 console.log(trafficLight2());
 let trafficLight3 = trafficLight(3);
 console.log(trafficLight3());
+console.log(trafficLight2());
